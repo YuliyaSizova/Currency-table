@@ -24,11 +24,11 @@ export default {
       columns: ['Название валюты', 'Цена', 'Количество'],
       server: {
         url: 'http://phisix-api3.appspot.com/stocks.json',
-        then: data => data.stock.map(m => [m.name, m.volume, m.price?.amount.toFixed(2)])
+        then: data => data.stock.map(currency => [currency.name, currency.volume, currency.price?.amount.toFixed(2)])
       },
       width: '500px',
       sort: true,
-      pagination: {limit: 5},
+      pagination: { limit: 5 },
       styles: { td: {height: '50px'}},
 
     }

@@ -1,4 +1,4 @@
-# untitled2
+# Currency table
 
 ## Project setup
 ```
